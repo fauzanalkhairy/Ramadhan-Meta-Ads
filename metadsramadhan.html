@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/Thinkpad/metaadsramadhan1.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas Meta Ads Ramadhan – WhatsApp Business</title>
+  <style>
+    :root {
+      --green-dark:#1f7a63;
+      --green-light:#2bb673;
+      --gold:#f4d160;
+      --bg:#f5f3ee;
+      --text:#1f2937;
+      --white:#ffffff;
+    }
+
+    /* Ramadhan floating icons */
+    .ramadhan-icon{
+      position:fixed;
+      font-size:26px;
+      opacity:.15;
+      animation: floatY 12s ease-in-out infinite;
+      pointer-events:none;
+      z-index:0;
+    }
+    .ramadhan-icon.i1{top:15%;left:6%;animation-delay:0s}
+    .ramadhan-icon.i2{top:40%;right:8%;animation-delay:3s}
+    .ramadhan-icon.i3{bottom:25%;left:10%;animation-delay:6s}
+    .ramadhan-icon.i4{bottom:10%;right:14%;animation-delay:9s}
+
+    @keyframes floatY{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-20px)}
+    }
+
+    *{box-sizing:border-box}
+
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.35), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(255,255,255,0.25), transparent 45%),
+        url('https://images.unsplash.com/photo-1587614382346-acb3c0b7cba6?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text);
+    }
+
+    header {
+      background:
+        linear-gradient(135deg, rgba(31,122,99,0.94), rgba(43,182,115,0.92)),
+        url('https://images.unsplash.com/photo-1542816417-0983c9c9ad53?q=80&w=1920&auto=format&fit=crop') center/cover;
+      color: white;
+      padding: 90px 20px 110px;
+      text-align: center;
+      position: relative;
+      overflow:hidden;
+    }
+
+    header::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:url('https://svgshare.com/i/13kB.svg') repeat-x bottom;
+      opacity:0.15;
+      pointer-events:none;
+    }
+
+    
+
+    header h1 {
+      margin-bottom: 14px;
+      font-size: clamp(2rem,5vw,2.8rem);
+      letter-spacing:-0.5px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      max-width:600px;
+      margin:0 auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: linear-gradient(135deg,#ffe58a,#f4d160);
+      color: #2f3e3a;
+      padding: 16px 34px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      transform: translateY(0);
+      transition: all .25s ease;
+    }
+
+    .cta-btn:hover{
+      transform: translateY(-4px);
+      box-shadow:0 18px 40px rgba(0,0,0,.3);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size:1.9rem;
+      color:#0f3f34;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 32px;
+      margin-bottom: 26px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+      transform: translateY(0);
+      transition: all .25s ease;
+      position: relative;
+      overflow: hidden;
+      background-image:
+        url('https://svgshare.com/i/13kC.svg'),
+        radial-gradient(circle at top right, rgba(244,209,96,.18), transparent 55%),
+        radial-gradient(circle at bottom left, rgba(43,182,115,.15), transparent 60%);
+      background-repeat:no-repeat;
+      background-position:top right, top right, bottom left;
+    }
+
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        url('https://svgshare.com/i/13kA.svg') repeat-x top;
+      opacity:0.04;
+      pointer-events:none;
+    }
+
+    .card.cta {
+      background: linear-gradient(180deg,#ffffff,#f9f9f9);
+      color: var(--text);
+    }
+
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow:0 35px 80px rgba(0,0,0,0.16);
+    }
+
+    ul {padding-left: 22px;}
+    li {margin-bottom: 12px;}
+
+    .price {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 22px 0;
+      color: var(--green-dark);
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: linear-gradient(180deg,#111827,#0b1220);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    .wa-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: linear-gradient(135deg,#2bb673,#1f7a63);
+      color: white;
+      padding: 16px 22px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all .25s ease;
+    }
+
+    .wa-float:hover{
+      transform: translateY(-4px) scale(1.02);
+      box-shadow:0 28px 60px rgba(0,0,0,.45);
+    }
+</style>
+</head>
+<body>
+
+  <!-- floating ramadhan background icons -->
+  <span class="ramadhan-icon i1">🌙</span>
+  <span class="ramadhan-icon i2">🕌</span>
+  <span class="ramadhan-icon i3">✨</span>
+  <span class="ramadhan-icon i4">🏮</span>
+
+  <header>
+    <h1>Ramadhan Ini, Usaha Bisa Lebih Dikenal &amp; Lebih Jalan</h1>
+    <p>Kalau usaha sudah bagus tapi pembeli masih sepi, bisa jadi masalahnya bukan di produk—tapi di cara mengenalkannya. Di kelas ini, kamu belajar Meta Ads dengan cara pelan dan mudah dipahami, agar usaha, jasa, atau skill kamu bisa sampai ke orang yang tepat.</p>
+    <a class="cta-btn" href="https://wa.me/6282225491750?text=Assalamu%E2%80%99alaikum%20kak,%20saya%20ingin%20daftar%20kelas%20Meta%20Ads%20spesial%20Ramadhan" target="_blank">Saya Mau Belajar Meta Ads – 30K</a>
+  </header>
+
+  <section>
+    <h2>Kenapa Banyak Usaha Sulit Berkembang?</h2>
+    <div class="card">
+      <p>Bukan karena produknya jelek. Bukan juga karena kurang niat.</p>
+      <ul>
+        <li>Usaha sudah jalan, tapi pembeli itu-itu saja</li>
+        <li>Sudah pernah coba promosi, tapi hasilnya tidak jelas</li>
+        <li>Bingung harus mulai dari mana di Facebook &amp; Instagram</li>
+        <li>Takut salah langkah dan buang uang</li>
+      </ul>
+      <p><strong>Faktanya:</strong> banyak orang ingin beli, tapi belum tahu usaha kamu ada.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Meta Ads Itu Penting, Bukan Cuma untuk Jualan</h2>
+    <div class="card">
+      <p>Di zaman sekarang, kemampuan promosi digital itu seperti <strong>alat bantu hidup</strong>. Tidak harus punya toko besar, tidak harus jago teknologi.</p>
+      <ul>
+        <li>Membantu usaha kecil dikenal lebih luas</li>
+        <li>Bisa dipakai untuk promosi jasa, produk, atau kegiatan apa pun</li>
+        <li>Menjadi <strong>skill digital</strong> yang bernilai dan dibutuhkan</li>
+        <li>Membuka peluang kerja dan penghasilan tambahan</li>
+      </ul>
+      <p>Ilmu ini tidak habis dipakai sekali. Sekali paham, bisa digunakan berkali-kali.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kelas Ini Cocok untuk Siapa?</h2>
+    <div class="card">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;">
+        <div>
+          <h3 style="margin-bottom:8px;">🛒 UMKM &amp; Pemilik Usaha</h3>
+          <p style="line-height:1.7;">Untuk yang ingin jualan lebih dikenal, tidak hanya mengandalkan posting biasa atau promosi dari mulut ke mulut.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:8px;">🏠 Ibu Rumah Tangga</h3>
+          <p style="line-height:1.7;">Untuk yang ingin membantu usaha keluarga, atau punya kegiatan produktif dari rumah dengan skill digital.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:8px;">🎓 Anak Muda &amp; Pencari Skill</h3>
+          <p style="line-height:1.7;">Untuk yang ingin punya bekal keterampilan digital, membuka peluang kerja, atau menambah nilai diri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dibimbing Langsung oleh Praktisi Berpengalaman</h2>
+    <div class="card" style="padding:42px;">
+      <p style="text-align:center;max-width:720px;margin:0 auto 36px;line-height:1.7;">Di kelas ini, kamu tidak belajar sendirian. Kamu akan <strong>dibimbing langsung</strong> oleh praktisi yang sudah berpengalaman mengelola strategi iklan dan konversi, dengan gaya penyampaian yang tenang, pelan, dan mudah dipahami.</p>
+
+      <div style="display:flex;justify-content:center;margin-bottom:36px;">
+        <div style="text-align:center;max-width:320px;">
+          <img src="./Kelas Meta Ads Ramadhan – WhatsApp Business_files/putra.png" alt="Putra Candra Buana" style="width:180px;height:180px;border-radius:22px;object-fit:cover;object-position:center 10%;margin-bottom:18px;box-shadow:0 18px 40px rgba(0,0,0,.18);">
+          <h3 style="margin:6px 0 6px;font-size:1.25rem;">Putra Candra Buana</h3>
+          <p style="font-size:1rem;opacity:.85;margin:0;">Spesialis Strategi &amp; Konversi</p>
+        </div>
+      </div>
+
+      <div style="max-width:760px;margin:0 auto 32px;">
+        <p style="line-height:1.75;margin-bottom:18px;">Putra Candra Buana telah menekuni dunia digital marketing dan pengembangan website selama bertahun-tahun. Pengalamannya dimulai dari pelatihan SEO di lingkungan redaksi media nasional, hingga mengelola ribuan website dan berbagai proyek digital.</p>
+        <ul style="line-height:1.8;">
+          <li>Mengikuti pelatihan <strong>SEO Redaksi detik.com</strong> (2015)</li>
+          <li>Peserta <strong>Pelatihan SEO Leader &amp; Programmer detik.co</strong> (2015)</li>
+          <li>Terlibat dalam pembuatan <strong>15.000+ website</strong> bersama tim</li>
+          <li>Aktif mengajar &amp; praktik <strong>SEO dan Facebook Ads</strong></li>
+          <li>Mengelola <strong>Pesantren Bisnis</strong> (2016–2019)</li>
+          <li>Pengembang platform digital seperti <strong>Bisnislink, CJSubmit, Marctool</strong></li>
+        </ul>
+        <p style="margin-top:18px;line-height:1.75;">Saat ini, beliau merupakan <strong>Owner &amp; Direktur</strong> di <strong>CV. Moroskato</strong> serta <strong>PT. Titik Terang Kreatif</strong>, dan aktif membimbing pelaku usaha serta individu yang ingin berkembang di dunia digital.</p>
+      </div>
+
+      <div style="max-width:720px;margin:0 auto;">
+        <ul style="line-height:1.8;">
+          <li><strong>10× pertemuan intensif</strong> (via Zoom)</li>
+          <li><strong>Periode kelas:</strong> 16 – 28 Februari</li>
+          <li><strong>Kuota terbatas:</strong> hanya 20 peserta agar pembelajaran lebih fokus</li>
+        </ul>
+        <p style="margin-top:22px;line-height:1.7;">Kelas ini sangat cocok untuk <strong>UMKM, ibu rumah tangga, dan anak muda</strong> yang ingin memahami Meta Ads dari dasar, tanpa istilah rumit, dan tanpa tekanan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Isi Ramadhan dengan Ilmu yang Benar-Benar Kepake</h2>
+    <div class="card cta" style="text-align:center;">
+      <div class="old-price">Harga Normal: Rp199.000</div>
+      <div class="price">Rp30.000 – Spesial Ramadhan</div>
+      <p style="max-width:640px;margin:16px auto 26px;line-height:1.7;">Belajar sekarang, manfaatnya bisa dirasakan setelah Ramadhan. <strong>Kuota hanya 20 orang</strong> agar pembelajaran lebih fokus dan bisa dibimbing dengan baik.</p>
+      <a class="cta-btn" href="https://wa.me/6282225491750?text=Assalamu%E2%80%99alaikum%20kak,%20saya%20ingin%20daftar%20kelas%20Meta%20Ads%20spesial%20Ramadhan" target="_blank">Daftar Sekarang, Sebelum Kuota Habis</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kelas Meta Ads Ramadhan</p>
+    <p>Belajar • Bertumbuh • Produktif</p>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6282225491750?text=Assalamu%E2%80%99alaikum%20kak,%20saya%20ingin%20daftar%20kelas%20Meta%20Ads%20spesial%20Ramadhan" target="_blank">
+    💬 Daftar Kelas Ramadhan
+  </a>
+
+
+
+</body></html>
